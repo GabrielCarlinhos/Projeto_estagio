@@ -34,6 +34,7 @@ constraint pk_pessoa primary key(id)
 );";
 $conn->query($query);
 
+mysqli_close($conn);
 ?>
 <div class="modal" id="modal-cadastro" tabindex="-1">
   <div class="modal-dialog">

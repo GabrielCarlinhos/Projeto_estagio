@@ -35,4 +35,5 @@ for($i = 0;$i<count($pessoas);$i++){
     <td onclick='excluir_pessoa($id)'><img src ='../icones/excluir.png' width='50' height='30'></td>
     </tr>";
   }
+  mysqli_close($conn);
 ?>

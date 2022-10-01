@@ -5,6 +5,7 @@ $pessoa = new Pessoa($_POST["nome"],$_POST["cpf"],$_POST["telefone"],$_POST["dat
 $query = "UPDATE tb_pessoas set nome_pessoa = '$pessoa->nome', cpf_pessoa = '$pessoa->cpf', telefone_pessoa = '$pessoa->telefone', dataNascimento_pessoa = '$pessoa->dataNascimento',
 genero_pessoa = '$pessoa->genero' where id = $pessoa->id;";
 $conn->query($query);
+mysqli_close($conn);
 header("Location:../view/index.php");
 
 ?>
