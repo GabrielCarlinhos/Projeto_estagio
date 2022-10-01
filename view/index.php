@@ -73,7 +73,7 @@ $conn->query($query);
     <div class="content">
       <h1 class="titulo">Cadastro de pessoas</h1>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-cadastro" onclick="limpa_form()">Cadastrar</button>
-        <input type="text" id="filtro" name="filtro" placeholder="filtrar">
+        <input type="text" id="filtro" name="filtro" placeholder="Buscar por nome">
 
         <div id="table_holder">
         <table id="tabela_pessoas" class="table table-responsive-lg table-bordered border-dark">
